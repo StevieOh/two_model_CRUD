@@ -4,19 +4,22 @@
   <title></title>
 </head>
 <body>
-<header>
-  <h1>Books</h1>
   <nav>
     <ul>
-       <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="#">Authors</a>
-      </li>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Authors</a></li>
     </ul>
   </nav>
-</header>
-
+  <header>
+    <h1>Books Main Page</h1>
+    <nav>
+      <a href="/books/books/new">Add a New Book</a>
+    </nav>
+  </header>
+  <main>
+    <% for(let i = 0; i < books.length; i++){%>
+        <a href="#"><%=books[i].title%></a>
+    <%}%>
+  </main>
 </body>
 </html>
